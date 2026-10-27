@@ -1,0 +1,41 @@
+// Prisma ORM 6.x: Prisma 7 does not support MongoDB yet.
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         String      @id @default(auto()) @map("_id") @db.ObjectId
+  auth0Id    String      @unique
+  name       String
+  picture    String?
+  progress   Json?       // cloud save: unlocked swords, cleared stages, review list, settings
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+  bestScores BestScore[]
+}
+
+// One row per player per stage: their best run. Leaderboards read this collection.
+model BestScore {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId     String   @db.ObjectId
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  stageId    String
+  score      Int
+  won        Boolean
+  correct    Int
+  answered   Int
+  accuracy   Int
+  bestStreak Int
+  durationMs Int
+  plays      Int      @default(1)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([userId, stageId])
+  @@index([stageId, score])
+}

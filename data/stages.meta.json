@@ -1,0 +1,74 @@
+{
+ "w1": {
+  "vi": "Tuyển dụng và nhân sự",
+  "hp": 300
+ },
+ "w2": {
+  "vi": "Văn phòng và làm việc nhóm",
+  "hp": 320
+ },
+ "w3": {
+  "vi": "Kinh doanh và doanh nghiệp",
+  "hp": 340
+ },
+ "w4": {
+  "vi": "Tài chính và ngân sách",
+  "hp": 360
+ },
+ "w5": {
+  "vi": "Quản lý và chiến lược",
+  "hp": 380
+ },
+ "w6": {
+  "vi": "Công nghệ và thiết bị",
+  "hp": 400
+ },
+ "w7": {
+  "vi": "Phần mềm và dữ liệu",
+  "hp": 420
+ },
+ "w8": {
+  "vi": "Hợp đồng và pháp lý",
+  "hp": 440
+ },
+ "w9": {
+  "vi": "Kinh tế và thị trường",
+  "hp": 460
+ },
+ "w10": {
+  "vi": "Sự nghiệp và phát triển",
+  "hp": 480
+ },
+ "s1": {
+  "vi": "Tính cách con người",
+  "hp": 300
+ },
+ "s2": {
+  "vi": "Giao tiếp và lập luận",
+  "hp": 320
+ },
+ "s3": {
+  "vi": "Cảm xúc và tâm trạng",
+  "hp": 340
+ },
+ "s4": {
+  "vi": "Công việc, quyền lực và xã hội",
+  "hp": 360
+ },
+ "s5": {
+  "vi": "Thời gian và thay đổi",
+  "hp": 380
+ },
+ "s6": {
+  "vi": "Từ hiếm và tinh tế",
+  "hp": 450
+ },
+ "bankC1": {
+  "vi": "Kho từ C1",
+  "hp": 380
+ },
+ "bankC2": {
+  "vi": "Kho từ C2",
+  "hp": 420
+ }
+}

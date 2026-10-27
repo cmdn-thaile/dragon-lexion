@@ -1,0 +1,26 @@
+{
+  "name": "dragon-lexicon",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "db:push": "prisma db push",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@auth0/nextjs-auth0": "^4.31.0",
+    "@prisma/client": "~6.19.3",
+    "next": "^15.3.9",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "prisma": "~6.19.3",
+    "typescript": "^5"
+  }
+}
