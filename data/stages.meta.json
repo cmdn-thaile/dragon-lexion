@@ -1,74 +1,206 @@
 {
- "w1": {
-  "vi": "Tuyển dụng và nhân sự",
-  "hp": 300
- },
- "w2": {
-  "vi": "Văn phòng và làm việc nhóm",
-  "hp": 320
- },
- "w3": {
-  "vi": "Kinh doanh và doanh nghiệp",
-  "hp": 340
- },
- "w4": {
-  "vi": "Tài chính và ngân sách",
-  "hp": 360
- },
- "w5": {
-  "vi": "Quản lý và chiến lược",
-  "hp": 380
- },
- "w6": {
-  "vi": "Công nghệ và thiết bị",
-  "hp": 400
- },
- "w7": {
-  "vi": "Phần mềm và dữ liệu",
-  "hp": 420
- },
- "w8": {
-  "vi": "Hợp đồng và pháp lý",
-  "hp": 440
- },
- "w9": {
-  "vi": "Kinh tế và thị trường",
-  "hp": 460
- },
- "w10": {
-  "vi": "Sự nghiệp và phát triển",
-  "hp": 480
- },
- "s1": {
-  "vi": "Tính cách con người",
-  "hp": 300
- },
- "s2": {
-  "vi": "Giao tiếp và lập luận",
-  "hp": 320
- },
- "s3": {
-  "vi": "Cảm xúc và tâm trạng",
-  "hp": 340
- },
- "s4": {
-  "vi": "Công việc, quyền lực và xã hội",
-  "hp": 360
- },
- "s5": {
-  "vi": "Thời gian và thay đổi",
-  "hp": 380
- },
- "s6": {
-  "vi": "Từ hiếm và tinh tế",
-  "hp": 450
- },
- "bankC1": {
-  "vi": "Kho từ C1",
-  "hp": 380
- },
- "bankC2": {
-  "vi": "Kho từ C2",
-  "hp": 420
- }
+  "easy_1": {
+    "vi": "Hành động & Từ vựng thông dụng",
+    "hp": 250
+  },
+  "easy_2": {
+    "vi": "Thời gian, Số lượng & Đo lường",
+    "hp": 250
+  },
+  "easy_3": {
+    "vi": "Giải trí, Nghệ thuật & Âm nhạc",
+    "hp": 250
+  },
+  "easy_4": {
+    "vi": "Nhà cửa, Đồ đạc & Nơi ở",
+    "hp": 250
+  },
+  "easy_5": {
+    "vi": "Du lịch, Giao thông & Nơi chốn",
+    "hp": 250
+  },
+  "easy_6": {
+    "vi": "Cảm xúc, Tính cách & Thái độ",
+    "hp": 250
+  },
+  "easy_7": {
+    "vi": "Thời tiết, Thiên nhiên & Môi trường",
+    "hp": 250
+  },
+  "easy_8": {
+    "vi": "Ăn uống & Ẩm thực",
+    "hp": 250
+  },
+  "easy_9": {
+    "vi": "Sức khỏe, Y tế & Thể chất",
+    "hp": 250
+  },
+  "easy_10": {
+    "vi": "Động vật & Thực vật",
+    "hp": 250
+  },
+  "easy_11": {
+    "vi": "Cơ thể người & Ngoại hình",
+    "hp": 250
+  },
+  "easy_12": {
+    "vi": "Gia đình & Mối quan hệ",
+    "hp": 250
+  },
+  "easy_13": {
+    "vi": "Thể thao & Hoạt động thể chất",
+    "hp": 250
+  },
+  "easy_14": {
+    "vi": "Trang phục, Thời trang & Mua sắm",
+    "hp": 250
+  },
+  "easy_15": {
+    "vi": "Công việc, Nghề nghiệp & Kinh doanh",
+    "hp": 250
+  },
+  "easy_16": {
+    "vi": "Khoa học, Công nghệ & Truyền thông",
+    "hp": 250
+  },
+  "easy_17": {
+    "vi": "Giáo dục, Trường học & Học tập",
+    "hp": 250
+  },
+  "easy_18": {
+    "vi": "Xã hội, Chính trị & Pháp luật",
+    "hp": 250
+  },
+  "med_1": {
+    "vi": "Hành động & Từ vựng thông dụng",
+    "hp": 340
+  },
+  "med_2": {
+    "vi": "Du lịch, Giao thông & Nơi chốn",
+    "hp": 340
+  },
+  "med_3": {
+    "vi": "Cảm xúc, Tính cách & Thái độ",
+    "hp": 340
+  },
+  "med_4": {
+    "vi": "Giáo dục, Trường học & Học tập",
+    "hp": 340
+  },
+  "med_5": {
+    "vi": "Nhà cửa, Đồ đạc & Nơi ở",
+    "hp": 340
+  },
+  "med_6": {
+    "vi": "Công việc, Nghề nghiệp & Kinh doanh",
+    "hp": 340
+  },
+  "med_7": {
+    "vi": "Sức khỏe, Y tế & Thể chất",
+    "hp": 340
+  },
+  "med_8": {
+    "vi": "Gia đình & Mối quan hệ",
+    "hp": 340
+  },
+  "med_9": {
+    "vi": "Thời gian, Số lượng & Đo lường",
+    "hp": 340
+  },
+  "med_10": {
+    "vi": "Ăn uống & Ẩm thực",
+    "hp": 340
+  },
+  "med_11": {
+    "vi": "Giải trí, Nghệ thuật & Âm nhạc",
+    "hp": 340
+  },
+  "med_12": {
+    "vi": "Động vật & Thực vật",
+    "hp": 340
+  },
+  "med_13": {
+    "vi": "Cơ thể người & Ngoại hình",
+    "hp": 340
+  },
+  "med_14": {
+    "vi": "Khoa học, Công nghệ & Truyền thông",
+    "hp": 340
+  },
+  "med_15": {
+    "vi": "Xã hội, Chính trị & Pháp luật",
+    "hp": 340
+  },
+  "med_16": {
+    "vi": "Thể thao & Hoạt động thể chất",
+    "hp": 340
+  },
+  "med_17": {
+    "vi": "Thời tiết, Thiên nhiên & Môi trường",
+    "hp": 340
+  },
+  "med_18": {
+    "vi": "Trang phục, Thời trang & Mua sắm",
+    "hp": 340
+  },
+  "hard_1": {
+    "vi": "Học thuật & Từ vựng nâng cao",
+    "hp": 420
+  },
+  "hard_2": {
+    "vi": "Kỹ thuật công nghiệp, Cơ khí & Xây dựng",
+    "hp": 420
+  },
+  "hard_3": {
+    "vi": "Luật pháp, Tư pháp & Chính sách",
+    "hp": 420
+  },
+  "hard_4": {
+    "vi": "Y tế, Dược học & Khoa học não bộ",
+    "hp": 420
+  },
+  "hard_5": {
+    "vi": "Kinh tế, Tài chính, Thương mại & Kế toán",
+    "hp": 420
+  },
+  "hard_6": {
+    "vi": "Khoa học tự nhiên (Sinh, Hóa, Lý, Thiên văn)",
+    "hp": 420
+  },
+  "hard_7": {
+    "vi": "Công nghệ thông tin, Máy tính & Điện tử",
+    "hp": 420
+  },
+  "hard_8": {
+    "vi": "Môi trường, Sinh thái & Nông nghiệp",
+    "hp": 420
+  },
+  "spec_1": {
+    "vi": "Y tế, Dược học & Khoa học não bộ",
+    "hp": 450
+  },
+  "spec_2": {
+    "vi": "Kỹ thuật công nghiệp, Cơ khí & Xây dựng",
+    "hp": 450
+  },
+  "spec_3": {
+    "vi": "Kinh tế, Tài chính, Thương mại & Kế toán",
+    "hp": 450
+  },
+  "spec_4": {
+    "vi": "Công nghệ thông tin, Máy tính & Điện tử",
+    "hp": 450
+  },
+  "spec_5": {
+    "vi": "Luật pháp, Tư pháp & Chính sách",
+    "hp": 450
+  },
+  "spec_6": {
+    "vi": "Môi trường, Sinh thái & Nông nghiệp",
+    "hp": 450
+  },
+  "spec_7": {
+    "vi": "Khoa học tự nhiên (Sinh, Hóa, Lý, Thiên văn)",
+    "hp": 450
+  }
 }
