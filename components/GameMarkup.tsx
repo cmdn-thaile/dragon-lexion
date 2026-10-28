@@ -71,6 +71,7 @@ function GameMarkup({ user }: { user: SessionUser | null }) {
           <a className="cam" id="camLink" target="_blank" rel="noopener noreferrer">Tra từ này trên Cambridge Dictionary</a>
           <div className="row">
             <span className="hint">Phím 1–4 để chọn, P để nghe, Enter để tiếp</span>
+            <button type="button" className="btn small ghost" id="saveWordBtn">💾 Lưu từ</button>
             <button className="btn" id="nextBtn">Câu tiếp theo</button>
           </div>
         </section>
@@ -83,6 +84,13 @@ function GameMarkup({ user }: { user: SessionUser | null }) {
           <p>Chọn một chủ đề từ vựng C1–C2 để vào trận. Trả lời đúng để chém, càng nhanh càng đau, chuỗi đúng càng dài sát thương càng tăng. Trả lời sai thì Hỏa long hồi máu, và trận càng kéo dài rồng càng mạnh. Học càng nhiều càng mở khóa thêm kiếm mới.</p>
           <p className="progress-line" id="progressLine"></p>
           <h3>Chọn màn</h3>
+          <div className="hub-tabs" id="hubTabs" role="tablist" aria-label="Phân loại màn chơi">
+            <button type="button" className="hub-tab active" role="tab" data-tab="easy" aria-selected="true">Dễ (A1–A2)</button>
+            <button type="button" className="hub-tab" role="tab" data-tab="med" aria-selected="false">Trung bình (B1–B2)</button>
+            <button type="button" className="hub-tab" role="tab" data-tab="hard" aria-selected="false">Khó (C1–C2)</button>
+            <button type="button" className="hub-tab" role="tab" data-tab="spec" aria-selected="false">Chuyên khoa</button>
+            <button type="button" className="hub-tab" role="tab" data-tab="custom" aria-selected="false">List từ cá nhân</button>
+          </div>
           <div className="grid" id="stageGrid"><p className="loading-note">Đang tải dữ liệu…</p></div>
           <h3>Kho từ C1–C2</h3>
           <p className="bank-note" id="bankNote"></p>
@@ -113,6 +121,51 @@ function GameMarkup({ user }: { user: SessionUser | null }) {
           </div>
         </div>
       </div>
+
+      <div className="overlay" id="saveOv" hidden>
+        <div className="panel save-modal">
+          <h2>Lưu từ vựng</h2>
+          <div className="save-word-preview">
+            <b className="save-word" id="saveWordText"></b>
+            <span className="ipa" id="saveWordIpa"></span>
+            <p className="save-vi" id="saveWordVi"></p>
+          </div>
+          <h3>Chọn nhóm từ</h3>
+          <div className="save-list-choices" id="saveListChoices"></div>
+          <div className="save-new-group">
+            <input
+              type="text"
+              id="saveNewGroupName"
+              className="save-input"
+              placeholder="+ Tạo nhóm mới…"
+              maxLength={40}
+            />
+            <button type="button" className="btn ghost small" id="saveCreateGroupBtn">+ Tạo</button>
+          </div>
+          <div className="modal-actions">
+            <button type="button" className="btn ghost" id="saveCloseBtn">Đóng</button>
+            <button type="button" className="btn" id="saveConfirmBtn">Lưu</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="overlay" id="customListOv" hidden>
+        <div className="panel custom-list-modal">
+          <div className="custom-list-header">
+            <h2 id="customListTitle">Quản lý nhóm từ</h2>
+            <span className="custom-list-count" id="customListCount">0 từ</span>
+          </div>
+          <p className="custom-list-desc" id="customListDesc">Danh sách các từ trong nhóm này. Bạn có thể xóa từng từ hoặc xóa toàn bộ nhóm.</p>
+          <div className="custom-word-list" id="customWordList"></div>
+          <div className="modal-actions">
+            <button type="button" className="btn ghost" id="customListCloseBtn">Đóng</button>
+            <button type="button" className="btn ghost danger" id="customListDeleteBtn">Xóa nhóm</button>
+            <button type="button" className="btn" id="customListPlayBtn">Vào trận</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="pixel-toast" id="pixelToast" hidden role="status" aria-live="polite"></div>
     </>
   );
 }
