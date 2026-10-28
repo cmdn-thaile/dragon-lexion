@@ -70,3 +70,18 @@ test("globals.css defines toastIn keyframes", () => {
   assert.ok(css.includes("@keyframes toastIn"), "globals.css must define @keyframes toastIn");
 });
 
+test("custom tab button prompt and play button stage selection retention", () => {
+  const code = fs.readFileSync("lib/game/engine.js", "utf-8");
+
+  assert.ok(
+    code.includes('$("#startBtn").textContent = "Chọn nhóm từ (cần ≥ 4 từ)";') &&
+    code.includes('currentHubTab === "custom"'),
+    "startBtn must prompt user to select a valid custom group with >= 4 words"
+  );
+  assert.ok(
+    code.includes('selectedStage = "custom_" + activeManageListId;'),
+    "customListPlayBtn must update selectedStage so returning to hub retains custom stage selection"
+  );
+});
+
+
