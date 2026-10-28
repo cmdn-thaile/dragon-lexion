@@ -11,7 +11,7 @@
       "tint": "rgba(80,200,120,.12)",
       "elder": false,
       "dragon": {
-        "name": "Hỏa long Ignis",
+        "name": "Hỏa long Ember",
         "body": "#b3322a",
         "dark": "#7d1f1a",
         "belly": "#f0c27a",
@@ -12399,7 +12399,7 @@
       "tint": "rgba(80,200,120,.12)",
       "elder": false,
       "dragon": {
-        "name": "Hỏa long Ignis",
+        "name": "Hỏa long Ember",
         "body": "#b3322a",
         "dark": "#7d1f1a",
         "belly": "#f0c27a",
@@ -15310,7 +15310,7 @@
       "tint": "rgba(80,200,120,.12)",
       "elder": false,
       "dragon": {
-        "name": "Hỏa long Ignis",
+        "name": "Hỏa long Ember",
         "body": "#b3322a",
         "dark": "#7d1f1a",
         "belly": "#f0c27a",
@@ -48839,7 +48839,7 @@
       "tint": "rgba(90,160,255,.12)",
       "elder": false,
       "dragon": {
-        "name": "Hỏa long Ignis",
+        "name": "Hỏa long Ember",
         "body": "#b3322a",
         "dark": "#7d1f1a",
         "belly": "#f0c27a",
@@ -54054,7 +54054,7 @@
       "tint": "rgba(90,160,255,.12)",
       "elder": false,
       "dragon": {
-        "name": "Hỏa long Ignis",
+        "name": "Hỏa long Ember",
         "body": "#b3322a",
         "dark": "#7d1f1a",
         "belly": "#f0c27a",
@@ -89014,7 +89014,7 @@
       "tint": "rgba(180,100,240,.12)",
       "elder": false,
       "dragon": {
-        "name": "Hỏa long Ignis",
+        "name": "Hỏa long Ember",
         "body": "#b3322a",
         "dark": "#7d1f1a",
         "belly": "#f0c27a",
@@ -141893,7 +141893,7 @@
       "tint": "rgba(240,160,60,.12)",
       "elder": true,
       "dragon": {
-        "name": "Hỏa long Ignis",
+        "name": "Hỏa long Ember",
         "body": "#b3322a",
         "dark": "#7d1f1a",
         "belly": "#f0c27a",

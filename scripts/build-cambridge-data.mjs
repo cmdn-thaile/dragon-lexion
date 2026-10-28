@@ -8,7 +8,7 @@ const ROOT_DIR = path.resolve(__dirname, "..");
 
 const DRAGON_TEMPLATES = [
   {
-    name: "Hỏa long Ignis",
+    name: "Hỏa long Ember",
     body: "#b3322a", dark: "#7d1f1a", belly: "#f0c27a", wing: "#8a2219", wingBack: "#5e150f",
     horn: "#f2c14e", eye: "#ffe14d", accent: "#f2c14e", horns: "swept", feat: null,
     breath: ["#fff6b0", "#ffb02e", "#ff4d1a"]
