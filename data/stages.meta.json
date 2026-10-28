@@ -202,5 +202,13 @@
   "spec_7": {
     "vi": "Khoa học tự nhiên (Sinh, Hóa, Lý, Thiên văn)",
     "hp": 450
+  },
+  "bankC1": {
+    "vi": "Kho từ C1",
+    "hp": 380
+  },
+  "bankC2": {
+    "vi": "Kho từ C2",
+    "hp": 420
   }
 }

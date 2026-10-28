@@ -32,12 +32,14 @@ export function getCustomLists(): CustomList[] {
     const parsed = JSON.parse(raw);
     if (!Array.isArray(parsed)) return [];
 
-    return parsed.map((item) => ({
-      id: String(item.id || ""),
-      name: String(item.name || ""),
-      createdAt: Number(item.createdAt) || Date.now(),
-      words: Array.isArray(item.words) ? item.words : [],
-    }));
+    return parsed
+      .filter((item): item is Record<string, unknown> => Boolean(item && typeof item === "object"))
+      .map((item) => ({
+        id: String(item.id || ""),
+        name: String(item.name || ""),
+        createdAt: Number(item.createdAt) || Date.now(),
+        words: Array.isArray(item.words) ? item.words : [],
+      }));
   } catch {
     return [];
   }
@@ -93,7 +95,7 @@ export function addWordToList(
   }
 
   targetList.words.push({
-    w: word.w,
+    w: word.w.trim(),
     lvl: word.lvl || "",
     pos: word.pos || "",
     ipa: word.ipa || "",
@@ -185,11 +187,11 @@ export function migrateLegacyReview(
       } else {
         reviewList.words.push({
           w: key,
-          lvl: "",
-          pos: "",
+          lvl: "Custom",
+          pos: "vocab",
           ipa: "",
-          def: "",
-          vi: "",
+          def: "(Chưa có định nghĩa)",
+          vi: "(Chưa có nghĩa tiếng Việt)",
           ex: "",
         });
       }

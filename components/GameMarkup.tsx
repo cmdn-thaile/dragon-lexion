@@ -81,7 +81,7 @@ function GameMarkup({ user }: { user: SessionUser | null }) {
         <div className="panel hub">
           <div className="hub-user"><UserSlot user={user} /></div>
           <h2>Hạ rồng bằng từ vựng</h2>
-          <p>Chọn một chủ đề từ vựng C1–C2 để vào trận. Trả lời đúng để chém, càng nhanh càng đau, chuỗi đúng càng dài sát thương càng tăng. Trả lời sai thì Hỏa long hồi máu, và trận càng kéo dài rồng càng mạnh. Học càng nhiều càng mở khóa thêm kiếm mới.</p>
+          <p>Chọn một chủ đề từ vựng để vào trận. Trả lời đúng để chém, càng nhanh càng đau, chuỗi đúng càng dài sát thương càng tăng. Trả lời sai thì Hỏa long hồi máu, và trận càng kéo dài rồng càng mạnh. Học càng nhiều càng mở khóa thêm kiếm mới.</p>
           <p className="progress-line" id="progressLine"></p>
           <h3>Chọn màn</h3>
           <div className="hub-tabs" id="hubTabs" role="tablist" aria-label="Phân loại màn chơi">

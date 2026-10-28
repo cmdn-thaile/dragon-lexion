@@ -13,20 +13,22 @@ const words = JSON.parse(fs.readFileSync(wordsPath, "utf-8"));
 // Implementation matching lib/stages.ts: isRankedStage(id)
 const isRankedStage = (id) => typeof id === "string" && id in meta;
 
-test("Leaderboard stage compatibility: all 51 Cambridge stages are ranked and valid", () => {
+test("Leaderboard stage compatibility: all 51 Cambridge stages and 2 bank stages are ranked and valid", () => {
   const stageIds = Object.keys(meta);
-  assert.equal(stageIds.length, 51, `Expected exactly 51 stages in meta, found ${stageIds.length}`);
+  assert.equal(stageIds.length, 53, `Expected 53 stages in meta (51 Cambridge + 2 bank), found ${stageIds.length}`);
 
   // Count by tier
   const easyStages = stageIds.filter(id => id.startsWith("easy_"));
   const medStages = stageIds.filter(id => id.startsWith("med_"));
   const hardStages = stageIds.filter(id => id.startsWith("hard_"));
   const specStages = stageIds.filter(id => id.startsWith("spec_"));
+  const bankStages = stageIds.filter(id => id.startsWith("bank"));
 
   assert.equal(easyStages.length, 18, "Easy tier must have 18 stages");
   assert.equal(medStages.length, 18, "Medium tier must have 18 stages");
   assert.equal(hardStages.length, 8, "Hard tier must have 8 stages");
   assert.equal(specStages.length, 7, "Special tier must have 7 stages");
+  assert.equal(bankStages.length, 2, "Bank tier must have 2 stages");
 
   for (const id of stageIds) {
     assert.equal(isRankedStage(id), true, `Stage ${id} should be recognized as a ranked stage`);

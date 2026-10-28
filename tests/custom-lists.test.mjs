@@ -108,6 +108,14 @@ test("handles corrupted localStorage gracefully", async () => {
 
   store.set("dl-custom-lists", JSON.stringify({ not: "an array" }));
   assert.deepEqual(getCustomLists(), []);
+
+  // Tolerates arrays containing nulls or non-objects
+  store.set(
+    "dl-custom-lists",
+    JSON.stringify([null, { id: "cl_1", name: "Valid", createdAt: 123, words: [] }])
+  );
+  assert.equal(getCustomLists().length, 1);
+  assert.equal(getCustomLists()[0].id, "cl_1");
 });
 
 test("edge cases: non-existent list and missing word details in migration", async () => {
@@ -147,4 +155,6 @@ test("edge cases: non-existent list and missing word details in migration", asyn
   assert.equal(lists.length, 1);
   assert.equal(lists[0].words.length, 1);
   assert.equal(lists[0].words[0].w, "dragon");
+  assert.equal(lists[0].words[0].def, "(Chưa có định nghĩa)");
+  assert.equal(lists[0].words[0].vi, "(Chưa có nghĩa tiếng Việt)");
 });

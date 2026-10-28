@@ -252,6 +252,9 @@ export function generateDatasets(options = {}) {
     .map(e => formatWordEntry(e, "hard"))
     .sort((a, b) => a[0].localeCompare(b[0]));
 
+  meta["bankC1"] = { vi: "Kho từ C1", hp: 380 };
+  meta["bankC2"] = { vi: "Kho từ C2", hp: 420 };
+
   const result = { stages, meta, bank };
 
   if (write && !testMode) {
